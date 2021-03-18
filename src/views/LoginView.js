@@ -7,7 +7,7 @@ export default function LoginView() {
   const dispatch = useDispatch();
 
   const [inputValues, setInputValues] = useState({
-    name: '',
+    email: '',
     password: '',
   });
 
