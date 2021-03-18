@@ -37,17 +37,32 @@ export default function RegisterView() {
       <form onSubmit={handleSubmit} className={style.form} autoComplete="off">
         <label className={style.label}>
           Your name
-          <input type="text" name="name" onChange={handleChange} />
+          <input
+            type="text"
+            name="name"
+            value={inputValues.name}
+            onChange={handleChange}
+          />
         </label>
 
         <label className={style.label}>
           Email
-          <input type="email" name="email" onChange={handleChange} />
+          <input
+            type="email"
+            name="email"
+            value={inputValues.email}
+            onChange={handleChange}
+          />
         </label>
 
         <label className={style.label}>
           Password
-          <input type="password" name="password" onChange={handleChange} />
+          <input
+            type="password"
+            name="password"
+            value={inputValues.password}
+            onChange={handleChange}
+          />
         </label>
 
         <button type="submit">Submit</button>

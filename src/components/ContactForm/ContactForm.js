@@ -38,6 +38,7 @@ export default function ContactForm() {
             autoComplete="off"
             type="text"
             name="name"
+            value={inputValues.name}
             onChange={handleChange}
           />
         </label>
@@ -48,6 +49,7 @@ export default function ContactForm() {
             autoComplete="off"
             type="text"
             name="number"
+            value={inputValues.number}
             onChange={handleChange}
           />
         </label>
